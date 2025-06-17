@@ -1,0 +1,14 @@
+/* @theme neobeam-umb */
+
+@import "neobeam";
+
+:root {
+    /* -- Colors -- */
+    /* Primary, and variations */
+    --primary:          #005A8B;
+    --saturation-multiplier: 1;
+    --saturation-decreaser: 1.8;
+    --brightness-multiplier: 2;
+    --brightness-decreaser: 1.25;
+    --color-shift: 150;
+}
