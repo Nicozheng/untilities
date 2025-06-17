@@ -147,13 +147,31 @@ section header {
     /* Compensate for radius */
     padding: var(--_radius);
     --height: calc(var(--header-height) + .5*var(--_radius));
-    --radius: var(--border-radius-default);
+    /* CHANGE THIS LINE 👇 */
+    --radius: 0;
 
     font-weight: 600;
     font-size: 1.25rem;
 
+    /* This line now resolves to "border-radius: 0 0 0 0;" */
     border-radius: 0 0 var(--_radius) var(--_radius);
 }
+
+/* Original Headers */
+/*section header {*/
+    /* Position at top */
+    /*top: 0;*/
+    
+    /* Compensate for radius */
+    /*padding: var(--_radius);*/
+    /*--height: calc(var(--header-height) + .5*var(--_radius));*/
+    /*--radius: var(--border-radius-default);*/
+
+    /*font-weight: 600;*/
+    /*font-size: 1.25rem;*/
+
+    /*border-radius: 0 0 var(--_radius) var(--_radius);*/
+/*}*/
 
 /* Footers */
 footer {
