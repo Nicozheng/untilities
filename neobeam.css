@@ -144,17 +144,18 @@ section header {
     /* Position at top */
     top: 0;
     
-    /* Compensate for radius */
-    padding: var(--_radius);
+    /* We are now setting padding directly. */
+    /* This adds 0.25em top/bottom and 1em left/right padding. */
+    /* Adjust these values to your liking. */
+    padding: 0.25em 1em;
+
     --height: calc(var(--header-height) + .5*var(--_radius));
-    /* CHANGE THIS LINE 👇 */
-    --radius: 0;
+    --radius: 0; /* This remains 0 to keep corners sharp */
 
     font-weight: 600;
     font-size: 1.25rem;
 
-    /* This line now resolves to "border-radius: 0 0 0 0;" */
-    border-radius: 0 0 var(--_radius) var(--_radius);
+    border-radius: 0; /* This remains 0 */
 }
 
 /* Original Headers */
