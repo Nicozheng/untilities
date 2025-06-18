@@ -136,7 +136,8 @@ section header, footer {
     text-overflow: ellipsis;
 
     background-color: var(--primary);
-    color: var(--text-color-negative);
+    /* color: var(--text-color-negative); */
+    color: white;
 }
 
 /* Headers */
@@ -147,7 +148,7 @@ section header {
     /* We are now setting padding directly. */
     /* This adds 0.25em top/bottom and 1em left/right padding. */
     /* Adjust these values to your liking. */
-    padding: 0.25em 1em;
+    padding: 0.5em 1em;
 
     --height: calc(var(--header-height) + .5*var(--_radius));
     --radius: 0; /* This remains 0 to keep corners sharp */
